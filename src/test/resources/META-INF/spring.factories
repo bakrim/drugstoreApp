@@ -1,0 +1,1 @@
+org.springframework.test.context.ContextCustomizerFactory = com.drugstore.app.config.TestContainersSpringContextCustomizerFactory
