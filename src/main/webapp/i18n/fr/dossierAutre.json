@@ -1,0 +1,47 @@
+{
+  "drugStoreApp": {
+    "dossierAutre": {
+      "home": {
+        "title": "DossierAutres",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Dossier Autre",
+        "createOrEditLabel": "Créer ou éditer un Dossier Autre",
+        "notFound": "Aucun Dossier Autre trouvé"
+      },
+      "created": "Un nouveau Dossier Autre a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Dossier Autre avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Dossier Autre avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Dossier Autre {{ id }} ?"
+      },
+      "detail": {
+        "title": "Dossier Autre"
+      },
+      "id": "ID",
+      "numero": "Numero",
+      "numeroEnvoi": "Numero Envoi",
+      "dateDepot": "Date Depot",
+      "dateEnvoi": "Date Envoi",
+      "typeDemendeur": "Type Demendeur",
+      "profession": "Profession",
+      "nature": "Nature",
+      "statut": "Statut",
+      "dateDerniereModif": "Date Derniere Modif",
+      "commentaire": "Commentaire",
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "telephone": "Telephone",
+      "cIN": "C IN",
+      "raisonSocial": "Raison Social",
+      "iCE": "I CE",
+      "numRC": "Num RC",
+      "iF": "I F",
+      "numAffiliation": "Num Affiliation",
+      "etapeValidationList": "Etape Validation List",
+      "user": "User",
+      "documentList": "Document List",
+      "utilisateur": "Utilisateur",
+      "local": "Local"
+    }
+  }
+}

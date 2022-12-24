@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183022",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "representant",
+  "fields": [
+    {
+      "fieldName": "entite",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cIN",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Representant",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "commission",
+      "otherEntityRelationshipName": "representantList",
+      "ownerSide": false,
+      "relationshipName": "commissionList",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

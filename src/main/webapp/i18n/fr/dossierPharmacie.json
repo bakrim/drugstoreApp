@@ -1,0 +1,39 @@
+{
+  "drugStoreApp": {
+    "dossierPharmacie": {
+      "home": {
+        "title": "DossierPharmacies",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Dossier Pharmacie",
+        "createOrEditLabel": "Créer ou éditer un Dossier Pharmacie",
+        "notFound": "Aucun Dossier Pharmacie trouvé"
+      },
+      "created": "Un nouveau Dossier Pharmacie a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Dossier Pharmacie avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Dossier Pharmacie avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Dossier Pharmacie {{ id }} ?"
+      },
+      "detail": {
+        "title": "Dossier Pharmacie"
+      },
+      "id": "ID",
+      "numero": "Numero",
+      "dateDepot": "Date Depot",
+      "nature": "Nature",
+      "statut": "Statut",
+      "dateDerniereModif": "Date Derniere Modif",
+      "commentaire": "Commentaire",
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "telephone": "Telephone",
+      "cIN": "C IN",
+      "etapeValidationList": "Etape Validation List",
+      "commisionList": "Commision List",
+      "user": "User",
+      "documentList": "Document List",
+      "utilisateur": "Utilisateur",
+      "local": "Local"
+    }
+  }
+}

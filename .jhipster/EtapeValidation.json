@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183028",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "etape_validation",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "decision",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "EtapeValidation",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dossierPharmacie",
+      "otherEntityRelationshipName": "etapeValidationList",
+      "relationshipName": "dossierPharmacie",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "dossierAutre",
+      "otherEntityRelationshipName": "etapeValidationList",
+      "relationshipName": "dossierAutre",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

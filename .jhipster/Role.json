@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183018",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "role",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Role",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "utilisateur",
+      "otherEntityRelationshipName": "roleList",
+      "ownerSide": false,
+      "relationshipName": "utilisateurList",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

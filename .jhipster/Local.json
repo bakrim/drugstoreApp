@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183024",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "local",
+  "fields": [
+    {
+      "fieldName": "longitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "latitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Local",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dossierPharmacie",
+      "otherEntityRelationshipName": "local",
+      "relationshipName": "dossierPharmacieList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "dossierAutre",
+      "otherEntityRelationshipName": "local",
+      "relationshipName": "dossierAutreList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "zone",
+      "otherEntityRelationshipName": "localList",
+      "relationshipName": "zone",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,194 @@
+
+entity Role {
+	libelle String
+}
+
+entity Session {
+	adresseIp String,
+    dateConnect ZonedDateTime,
+    dateDeconnect ZonedDateTime
+}
+
+entity Historique {
+	Action String,
+    Date ZonedDateTime
+}
+
+
+entity Utilisateur {
+
+	Email String,
+    Username String,
+    Password String,
+    Active Boolean,
+    Nom String,
+    Prenom String,
+    Telephone String
+}
+
+entity Representant {
+
+	Entite String,
+	Nom String,
+    Prenom String,
+    Telephone String,
+    CIN String
+}
+
+entity DossierPharmacie {
+
+	Numero String,
+    DateDepot ZonedDateTime,
+	Nature String,
+	Statut String,
+	DateDerniereModif ZonedDateTime,
+    Commentaire String,
+	Nom String,
+    Prenom String,
+    Telephone String,
+    CIN String
+}
+
+entity Local {
+
+    Longitude Double,
+    Latitude Double,
+    Adresse String
+}
+
+entity Zone {
+
+    Libelle String
+}
+
+
+entity Document {
+
+    Name String,
+	ThumbnailName String,
+	MimeType String,
+	ThumbnailPath String,
+	DownloadPath String,
+	ThumbnailDownloadPath String,
+    UploadDate ZonedDateTime,
+    Path String,
+    documentSize Long
+}
+
+entity Commission {
+
+    Date ZonedDateTime,
+    Decision String,
+    Motif String
+}
+
+
+
+entity EtapeValidation {
+
+    Libelle String,
+    Description String,
+    Date ZonedDateTime,
+    Decision String
+}
+
+entity DossierAutre {
+
+	Numero String,
+    NumeroEnvoi String,
+    DateDepot ZonedDateTime,
+    DateEnvoi ZonedDateTime,
+    TypeDemendeur String,
+    Profession String,
+	Nature String,
+	Statut String,
+	DateDerniereModif ZonedDateTime,
+    Commentaire String,
+	Nom String,
+    Prenom String,
+    Telephone String,
+    CIN String,
+	RaisonSocial String,
+    ICE String,
+    NumRC String,
+    IF String,
+    NumAffiliation String
+}
+
+
+
+relationship OneToMany {
+	Session{historiqueList} to Historique
+}
+
+relationship OneToMany {
+	Utilisateur{dossierPharmacieList} to DossierPharmacie
+}
+
+relationship OneToMany {
+	Utilisateur{dossierAutreList} to DossierAutre
+}
+
+relationship ManyToOne {
+	DossierPharmacie to User
+}
+
+relationship ManyToOne {
+	DossierAutre to User
+}
+
+relationship ManyToMany {
+	Utilisateur{roleList} to Role{utilisateurList} 
+}
+
+
+relationship OneToMany {
+	Zone{localList} to Local
+}
+
+relationship OneToMany {
+	Local{dossierPharmacieList} to DossierPharmacie
+}
+
+relationship OneToMany {
+	Local{dossierAutreList} to DossierAutre
+}
+
+
+relationship ManyToMany {
+	DossierPharmacie{documentList} to Document{dossierPharmacieList}
+}
+
+relationship ManyToMany {
+	DossierAutre{documentList} to Document{dossierAutreList}
+}
+
+
+relationship OneToMany {
+	DossierPharmacie{etapeValidationList} to EtapeValidation
+}
+
+relationship OneToMany {
+	DossierAutre{etapeValidationList} to EtapeValidation
+}
+
+
+relationship OneToMany {
+	DossierPharmacie{commisionList} to Commission
+}
+
+relationship OneToMany {
+	Utilisateur{sessionList} to Session
+}
+
+relationship ManyToOne {
+	Session to User
+}
+
+relationship ManyToMany {
+	Commission{representantList} to Representant{commissionList} 
+}
+
+
+
+

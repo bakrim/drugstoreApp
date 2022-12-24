@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183019",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "session",
+  "fields": [
+    {
+      "fieldName": "adresseIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateConnect",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "dateDeconnect",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Session",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "historique",
+      "otherEntityRelationshipName": "session",
+      "relationshipName": "historiqueList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "session",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "utilisateur",
+      "otherEntityRelationshipName": "sessionList",
+      "relationshipName": "utilisateur",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

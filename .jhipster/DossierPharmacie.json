@@ -1,0 +1,94 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183023",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "dossier_pharmacie",
+  "fields": [
+    {
+      "fieldName": "numero",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDepot",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "nature",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDerniereModif",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "commentaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cIN",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DossierPharmacie",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "etapeValidation",
+      "otherEntityRelationshipName": "dossierPharmacie",
+      "relationshipName": "etapeValidationList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "commission",
+      "otherEntityRelationshipName": "dossierPharmacie",
+      "relationshipName": "commisionList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "dossierPharmacie",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "document",
+      "otherEntityRelationshipName": "dossierPharmacieList",
+      "ownerSide": true,
+      "relationshipName": "documentList",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "utilisateur",
+      "otherEntityRelationshipName": "dossierPharmacieList",
+      "relationshipName": "utilisateur",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "local",
+      "otherEntityRelationshipName": "dossierPharmacieList",
+      "relationshipName": "local",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

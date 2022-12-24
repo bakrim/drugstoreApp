@@ -1,0 +1,29 @@
+{
+  "drugStoreApp": {
+    "local": {
+      "home": {
+        "title": "Locals",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Local",
+        "createOrEditLabel": "Créer ou éditer un Local",
+        "notFound": "Aucun Local trouvé"
+      },
+      "created": "Un nouveau Local a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Local avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Local avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Local {{ id }} ?"
+      },
+      "detail": {
+        "title": "Local"
+      },
+      "id": "ID",
+      "longitude": "Longitude",
+      "latitude": "Latitude",
+      "adresse": "Adresse",
+      "dossierPharmacieList": "Dossier Pharmacie List",
+      "dossierAutreList": "Dossier Autre List",
+      "zone": "Zone"
+    }
+  }
+}

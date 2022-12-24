@@ -11,7 +11,27 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183018_added_entity_Role.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183019_added_entity_Session.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183020_added_entity_Historique.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183021_added_entity_Utilisateur.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183022_added_entity_Representant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183023_added_entity_DossierPharmacie.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183024_added_entity_Local.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183025_added_entity_Zone.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183026_added_entity_Document.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183027_added_entity_Commission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183028_added_entity_EtapeValidation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183029_added_entity_DossierAutre.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20221223183019_added_entity_constraints_Session.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183020_added_entity_constraints_Historique.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183021_added_entity_constraints_Utilisateur.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183023_added_entity_constraints_DossierPharmacie.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183024_added_entity_constraints_Local.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183027_added_entity_constraints_Commission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183028_added_entity_constraints_EtapeValidation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221223183029_added_entity_constraints_DossierAutre.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

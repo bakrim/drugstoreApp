@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183025",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "zone",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Zone",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "local",
+      "otherEntityRelationshipName": "zone",
+      "relationshipName": "localList",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

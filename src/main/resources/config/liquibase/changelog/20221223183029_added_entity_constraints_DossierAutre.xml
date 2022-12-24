@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity DossierAutre.
+    -->
+    <changeSet id="20221223183029-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="dossier_autre"
+                                 constraintName="fk_dossier_autre__user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="dossier_autre_id"
+                                 baseTableName="rel_dossier_autre__document_list"
+                                 constraintName="fk_rel_dossier_autre__document_list__dossier_autre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dossier_autre"/>
+
+        <addForeignKeyConstraint baseColumnNames="document_list_id"
+                                 baseTableName="rel_dossier_autre__document_list"
+                                 constraintName="fk_rel_dossier_autre__document_list__document_list_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="document"/>
+
+        <addForeignKeyConstraint baseColumnNames="utilisateur_id"
+                                 baseTableName="dossier_autre"
+                                 constraintName="fk_dossier_autre__utilisateur_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="utilisateur"/>
+
+        <addForeignKeyConstraint baseColumnNames="local_id"
+                                 baseTableName="dossier_autre"
+                                 constraintName="fk_dossier_autre__local_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="local"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183020",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "historique",
+  "fields": [
+    {
+      "fieldName": "action",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Historique",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "session",
+      "otherEntityRelationshipName": "historiqueList",
+      "relationshipName": "session",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

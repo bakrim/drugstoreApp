@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183027",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "commission",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "decision",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motif",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Commission",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "representant",
+      "otherEntityRelationshipName": "commissionList",
+      "ownerSide": true,
+      "relationshipName": "representantList",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "dossierPharmacie",
+      "otherEntityRelationshipName": "commisionList",
+      "relationshipName": "dossierPharmacie",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

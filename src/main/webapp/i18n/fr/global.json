@@ -7,6 +7,18 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entités",
+        "role": "Role",
+        "session": "Session",
+        "historique": "Historique",
+        "utilisateur": "Utilisateur",
+        "representant": "Representant",
+        "dossierPharmacie": "Dossier Pharmacie",
+        "local": "Local",
+        "zone": "Zone",
+        "document": "Document",
+        "commission": "Commission",
+        "etapeValidation": "Etape Validation",
+        "dossierAutre": "Dossier Autre",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

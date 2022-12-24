@@ -1,0 +1,67 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183026",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "document",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thumbnailName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mimeType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thumbnailPath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "downloadPath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thumbnailDownloadPath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uploadDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "path",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documentSize",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Document",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dossierPharmacie",
+      "otherEntityRelationshipName": "documentList",
+      "ownerSide": false,
+      "relationshipName": "dossierPharmacieList",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "dossierAutre",
+      "otherEntityRelationshipName": "documentList",
+      "ownerSide": false,
+      "relationshipName": "dossierAutreList",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

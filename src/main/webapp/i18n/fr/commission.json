@@ -1,0 +1,28 @@
+{
+  "drugStoreApp": {
+    "commission": {
+      "home": {
+        "title": "Commissions",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Commission",
+        "createOrEditLabel": "Créer ou éditer un Commission",
+        "notFound": "Aucun Commission trouvé"
+      },
+      "created": "Un nouveau Commission a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Commission avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Commission avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Commission {{ id }} ?"
+      },
+      "detail": {
+        "title": "Commission"
+      },
+      "id": "ID",
+      "date": "Date",
+      "decision": "Decision",
+      "motif": "Motif",
+      "representantList": "Representant List",
+      "dossierPharmacie": "Dossier Pharmacie"
+    }
+  }
+}

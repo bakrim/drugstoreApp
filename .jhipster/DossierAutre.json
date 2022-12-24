@@ -1,0 +1,124 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183029",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "dossier_autre",
+  "fields": [
+    {
+      "fieldName": "numero",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numeroEnvoi",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDepot",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "dateEnvoi",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "typeDemendeur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profession",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nature",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDerniereModif",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "commentaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cIN",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "raisonSocial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "iCE",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numRC",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "iF",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numAffiliation",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DossierAutre",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "etapeValidation",
+      "otherEntityRelationshipName": "dossierAutre",
+      "relationshipName": "etapeValidationList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "dossierAutre",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "document",
+      "otherEntityRelationshipName": "dossierAutreList",
+      "ownerSide": true,
+      "relationshipName": "documentList",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "utilisateur",
+      "otherEntityRelationshipName": "dossierAutreList",
+      "relationshipName": "utilisateur",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "local",
+      "otherEntityRelationshipName": "dossierAutreList",
+      "relationshipName": "local",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

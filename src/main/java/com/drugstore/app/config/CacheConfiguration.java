@@ -48,6 +48,36 @@ public class CacheConfiguration {
             createCache(cm, com.drugstore.app.domain.User.class.getName());
             createCache(cm, com.drugstore.app.domain.Authority.class.getName());
             createCache(cm, com.drugstore.app.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.drugstore.app.domain.Role.class.getName());
+            createCache(cm, com.drugstore.app.domain.Role.class.getName() + ".utilisateurLists");
+            createCache(cm, com.drugstore.app.domain.Session.class.getName());
+            createCache(cm, com.drugstore.app.domain.Session.class.getName() + ".historiqueLists");
+            createCache(cm, com.drugstore.app.domain.Historique.class.getName());
+            createCache(cm, com.drugstore.app.domain.Utilisateur.class.getName());
+            createCache(cm, com.drugstore.app.domain.Utilisateur.class.getName() + ".dossierPharmacieLists");
+            createCache(cm, com.drugstore.app.domain.Utilisateur.class.getName() + ".dossierAutreLists");
+            createCache(cm, com.drugstore.app.domain.Utilisateur.class.getName() + ".sessionLists");
+            createCache(cm, com.drugstore.app.domain.Utilisateur.class.getName() + ".roleLists");
+            createCache(cm, com.drugstore.app.domain.Representant.class.getName());
+            createCache(cm, com.drugstore.app.domain.Representant.class.getName() + ".commissionLists");
+            createCache(cm, com.drugstore.app.domain.DossierPharmacie.class.getName());
+            createCache(cm, com.drugstore.app.domain.DossierPharmacie.class.getName() + ".etapeValidationLists");
+            createCache(cm, com.drugstore.app.domain.DossierPharmacie.class.getName() + ".commisionLists");
+            createCache(cm, com.drugstore.app.domain.DossierPharmacie.class.getName() + ".documentLists");
+            createCache(cm, com.drugstore.app.domain.Local.class.getName());
+            createCache(cm, com.drugstore.app.domain.Local.class.getName() + ".dossierPharmacieLists");
+            createCache(cm, com.drugstore.app.domain.Local.class.getName() + ".dossierAutreLists");
+            createCache(cm, com.drugstore.app.domain.Zone.class.getName());
+            createCache(cm, com.drugstore.app.domain.Zone.class.getName() + ".localLists");
+            createCache(cm, com.drugstore.app.domain.Document.class.getName());
+            createCache(cm, com.drugstore.app.domain.Document.class.getName() + ".dossierPharmacieLists");
+            createCache(cm, com.drugstore.app.domain.Document.class.getName() + ".dossierAutreLists");
+            createCache(cm, com.drugstore.app.domain.Commission.class.getName());
+            createCache(cm, com.drugstore.app.domain.Commission.class.getName() + ".representantLists");
+            createCache(cm, com.drugstore.app.domain.EtapeValidation.class.getName());
+            createCache(cm, com.drugstore.app.domain.DossierAutre.class.getName());
+            createCache(cm, com.drugstore.app.domain.DossierAutre.class.getName() + ".etapeValidationLists");
+            createCache(cm, com.drugstore.app.domain.DossierAutre.class.getName() + ".documentLists");
             // jhipster-needle-ehcache-add-entry
         };
     }

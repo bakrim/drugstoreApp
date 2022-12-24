@@ -1,0 +1,29 @@
+{
+  "drugStoreApp": {
+    "representant": {
+      "home": {
+        "title": "Representants",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Representant",
+        "createOrEditLabel": "Créer ou éditer un Representant",
+        "notFound": "Aucun Representant trouvé"
+      },
+      "created": "Un nouveau Representant a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Representant avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Representant avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Representant {{ id }} ?"
+      },
+      "detail": {
+        "title": "Representant"
+      },
+      "id": "ID",
+      "entite": "Entite",
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "telephone": "Telephone",
+      "cIN": "C IN",
+      "commissionList": "Commission List"
+    }
+  }
+}

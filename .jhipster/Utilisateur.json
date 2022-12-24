@@ -1,0 +1,70 @@
+{
+  "applications": "*",
+  "changelogDate": "20221223183021",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "utilisateur",
+  "fields": [
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "username",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Utilisateur",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dossierPharmacie",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "dossierPharmacieList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "dossierAutre",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "dossierAutreList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "session",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "sessionList",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "role",
+      "otherEntityRelationshipName": "utilisateurList",
+      "ownerSide": true,
+      "relationshipName": "roleList",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}
